@@ -1,11 +1,18 @@
 <?php   
 
-// Settings database
-$host = 'localhost';
+// Settings database local
+/*$host = 'localhost';
 $port = '5432';
 $dbname = 'petstore';
 $username = 'postgres';
 $password = 'unicesmag';
+*/
+// Settings database local supabase
+$host = 'aws-0-us-east-1.pooler.supabase.com';
+$port = '6543';
+$dbname = 'postgres';
+$username = 'postgres.qrounzrauwzxalnseoyf';
+$password = 'cesmag@@';
 
 // Connection string
 $data_connection = "
