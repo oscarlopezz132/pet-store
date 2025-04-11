@@ -19,3 +19,6 @@ SUBIR ACTUALIZACIONES
 git add --all
 git commit -m "llenar datos y conexiones"
  git push origin main
+
+ COMANDOS
+ http://localhost/pet-store/src/signup.php

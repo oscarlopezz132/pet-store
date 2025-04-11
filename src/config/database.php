@@ -12,7 +12,7 @@ $host = 'aws-0-us-east-1.pooler.supabase.com';
 $port = '6543';
 $dbname = 'postgres';
 $username = 'postgres.qrounzrauwzxalnseoyf';
-$password = 'cesmag@@';
+$password = 'unicesmag@@';
 
 // Connection string
 $data_connection = "
@@ -26,9 +26,8 @@ $data_connection = "
 $conn = pg_connect($data_connection);
 
 if (!$conn) {
-    echo "Connection failed: ";
-} else {
-    echo "Connected successfully";
+    echo "Connection failed: " . preg_last_error($conn);
+
 }
 
 
