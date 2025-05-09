@@ -7,7 +7,8 @@ $lname =$_POST['l_name'];
 $email =$_POST['e_mail'];
 $passw =$_POST['p_assw'];
 
-$hashed_password =password_hash($passw,PASSWORD_DEFAULT);
+//$hashed_password =password_hash($passw,PASSWORD_DEFAULT);
+$hashed_password = $passw;
 $sql_validate_email= "
 select
 count(id) as total
@@ -32,7 +33,7 @@ if($ans){
         $ans = pg_query($conn, $sql);
         if($ans){
             echo "<script>alert('user has been created. Go to login!')</script>";
-            header('Rfresh:0;URL=http://localhost/pet-store/src/signin.html');
+            header('Refresh:0;URL=http://localhost/pet-store/src/signin.html');
         }else{
             echo "error";
         }
